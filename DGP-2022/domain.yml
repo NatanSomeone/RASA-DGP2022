@@ -11,25 +11,33 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-  - text: "Saudações terráqueo"
-  
+  - text: "Oi , como vai ?"
+  - text: "Oi meu AMIGO, como tá ? "
+  - text: "Faaala aí bixo, bora pra um rolê ? "
+  - text: "Eai mano, vai encarar? "
+
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
+  - text: "Aqui algo que pode te animar"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+  - text: "Isso ajudou ?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Que legal, continua assim"
+  - text: "Maravilha, continua assim"
+  - text: "Massa"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Tchau"
+  - text: "Adeus"
+  - text: "Até mais"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "Eu sou um robo"
+  - text: "Sou um robo feito pelo time de DGP"
+  - text: "To vivo só nas linhas de code"
 
 session_config:
   session_expiration_time: 60
