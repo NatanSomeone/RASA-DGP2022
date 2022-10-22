@@ -9,6 +9,9 @@ intents:
   - mood_unhappy
   - bot_challenge
 
+actions:
+  - action_show_time
+
 responses:
   utter_greet:
   - text: "Oi , como vai ?"
