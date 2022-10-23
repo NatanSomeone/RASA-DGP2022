@@ -9,14 +9,15 @@ intents:
 - give_time
 - goodbye
 - greet
+- inform_name
 - mood_great
 - mood_unhappy
-- inform_name
-entities: 
-  - name
+entities:
+- name
 slots:
   name:
     type: text
+    influence_conversation: true
 responses:
   utter_greet:
   - text: Oi , como vai ?
@@ -41,6 +42,6 @@ responses:
   - text: Sou um robo feito pelo time de DGP
   - text: To vivo só nas linhas de code
 actions:
+- action_get_name
 - action_show_time
 - utter_greet
-- action_get_name

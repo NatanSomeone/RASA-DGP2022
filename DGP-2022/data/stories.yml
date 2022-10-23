@@ -42,3 +42,26 @@ stories:
   - action: utter_greet
   - intent: inform_name
   - action: action_get_name
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform_name
+    entities:
+    - name: anna
+  - slot_was_set:
+    - name: anna
+  - action: action_get_name
+  - intent: inform_name
+    entities:
+    - name: johnnatan
+  - slot_was_set:
+    - name: johnnatan
+  - action: action_get_name
+  - intent: inform_name
+    entities:
+    - name: carlos
+  - slot_was_set:
+    - name: carlos
+  - action: action_get_name

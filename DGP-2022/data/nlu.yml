@@ -15,6 +15,7 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - oi
 - intent: goodbye
   examples: |
     - good afternoon
@@ -90,9 +91,11 @@ nlu:
     - got the time
     - what time is it
     - time
-
 - intent: inform_name
   examples: |
-    - meu nome é [joão]{"entity": "name"}
-    - me chamo [carlos]{"entity": "name"}
-    - sou [johnnatan]{"entity": "name"}
+    - meu nome é [joão](name)
+    - me chamo [carlos](name)
+    - sou [johnnatan](name)
+    - sou [anna](name)
+    - me chamo [johnnatan](name)
+    - meu nome é [carlos](name)
