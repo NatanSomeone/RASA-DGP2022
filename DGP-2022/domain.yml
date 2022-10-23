@@ -1,48 +1,39 @@
-version: "2.0"
-
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - give_time
-
-actions:
-  - action_show_time
-
-responses:
-  utter_greet:
-  - text: "Oi , como vai ?"
-  - text: "Oi meu AMIGO, como tá ? "
-  - text: "Faaala aí bixo, bora pra um rolê ? "
-  - text: "Eai mano, vai encarar? "
-
-
-  utter_cheer_up:
-  - text: "Aqui algo que pode te animar"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Isso ajudou ?"
-
-  utter_happy:
-  - text: "Que legal, continua assim"
-  - text: "Maravilha, continua assim"
-  - text: "Massa"
-
-  utter_goodbye:
-  - text: "Tchau"
-  - text: "Adeus"
-  - text: "Até mais"
-
-  utter_iamabot:
-  - text: "Eu sou um robo"
-  - text: "Sou um robo feito pelo time de DGP"
-  - text: "To vivo só nas linhas de code"
-
+version: '2.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- affirm
+- bot_challenge
+- deny
+- give_time
+- goodbye
+- greet
+- mood_great
+- mood_unhappy
+responses:
+  utter_greet:
+  - text: Oi , como vai ?
+  - text: 'Oi meu AMIGO, como tá ? '
+  - text: 'Faaala aí bixo, bora pra um rolê ? '
+  - text: 'Eai mano, vai encarar? '
+  utter_cheer_up:
+  - text: Aqui algo que pode te animar
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Isso ajudou ?
+  utter_happy:
+  - text: Que legal, continua assim
+  - text: Maravilha, continua assim
+  - text: Massa
+  utter_goodbye:
+  - text: Tchau
+  - text: Adeus
+  - text: Até mais
+  utter_iamabot:
+  - text: Eu sou um robo
+  - text: Sou um robo feito pelo time de DGP
+  - text: To vivo só nas linhas de code
+actions:
+- action_show_time
+- utter_greet
