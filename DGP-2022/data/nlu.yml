@@ -90,3 +90,9 @@ nlu:
     - got the time
     - what time is it
     - time
+
+- intent: inform_name
+  examples: |
+    - meu nome é [](name)
+    - me chamo [](name)
+    - sou [](name)

@@ -49,3 +49,17 @@ class ActionHelloWorld(Action):
         dispatcher.utter_message(text=f"o tempo é {__TIME}")
 
         return []
+        
+class ActionGetName(Action):
+
+    def name(self) -> Text:
+        return "action_get_name"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        name =  tracker.get_slot('name');
+        dispatcher.utter_message(text=f"Seu nome é {name}")
+
+        return []
