@@ -2,9 +2,7 @@ from __future__ import print_function
 
 import os.path
 
-from google.auth.transport.requests import Request
 from oauth2client.service_account import ServiceAccountCredentials
-from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
@@ -25,7 +23,7 @@ def main():
     # created automatically when the authorization flow completes for the first
     # time.
     key_file_location = os.path.join(os.path.expanduser('~'), 'rasa2022dgp-2ef451d6a1cf.json')
-    api_key = os.environ['GKEY'];
+    api_key = os.environ['GKEY']
     if os.path.exists(key_file_location):
         creds = ServiceAccountCredentials.from_json_keyfile_name(key_file_location, SCOPES)
     try:
