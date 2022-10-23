@@ -25,6 +25,7 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+import requests
 import datetime as dt 
 from typing import Any, Text, Dict, List
 
@@ -41,6 +42,9 @@ class ActionHelloWorld(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        dispatcher.utter_message(text=f"{dt.datetime.now()}")
+        url = "http://worldtimeapi.org/api/timezone/America/Sao_Paulo";
+        json_data = requests. get(url) .json();
+        __TIME = datetime.fromtimestamp(json_data["unixtime"]).strftime("%a, %d %b %Y %H:%M:%S");
+        dispatcher.utter_message(text=f"{__TIME}")
 
         return []
