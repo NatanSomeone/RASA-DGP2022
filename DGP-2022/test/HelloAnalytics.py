@@ -69,11 +69,11 @@ def get_results(service, profile_id):
 def print_results(results):
     # Print data nicely for the user.
     if results:
-        print 'View (Profile):', results.get('profileInfo').get('profileName')
-        print 'Total Sessions:', results.get('rows')[0][0]
+        print('View (Profile):', results.get('profileInfo').get('profileName'))
+        print('Total Sessions:', results.get('rows')[0][0])
 
     else:
-        print 'No results found'
+        print('No results found')
 
 
 def main():
