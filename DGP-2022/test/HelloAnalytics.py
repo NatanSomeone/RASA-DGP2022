@@ -79,7 +79,7 @@ def print_results(results):
 def main():
     # Define the auth scopes to request.
     scope = 'https://www.googleapis.com/auth/analytics.readonly'
-    key_file_location = os.path.join(os.path.expanduser('~'), '/rasa2022dgp-2ef451d6a1cf.json')
+    key_file_location = os.path.join(os.path.expanduser('~'), 'rasa2022dgp-2ef451d6a1cf.json')
 
     # Authenticate and construct service.
     service = get_service(
