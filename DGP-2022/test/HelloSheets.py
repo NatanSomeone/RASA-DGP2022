@@ -27,7 +27,7 @@ def main():
     key_file_location = os.path.join(os.path.expanduser('~'), 'rasa2022dgp-2ef451d6a1cf.json')
     
     if os.path.exists(key_file_location):
-        creds = Credentials.from_authorized_user_file(key_file_location, SCOPES)
+        creds = Credentials.from_json_keyfile_name(key_file_location, SCOPES)
     try:
         service = build('sheets', 'v4', credentials=creds)
 
