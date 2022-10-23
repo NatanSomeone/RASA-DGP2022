@@ -42,8 +42,8 @@ class ActionHelloWorld(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        # url = "http://worldtimeapi.org/api/timezone/America/Sao_Paulo";
-        # json_data = requests. get(url) .json();
+        url = "http://worldtimeapi.org/api/timezone/America/Sao_Paulo";
+        json_data = requests. get(url) .json();
         __TIME = dt.datetime.fromtimestamp(json_data["unixtime"]).strftime("%a, %d %b %Y %H:%M:%S");
         # __TIME = dt.now().strftime("%a, %d %b %Y %H:%M:%S");
         dispatcher.utter_message(text=f"o tempo é {__TIME}")
