@@ -12,7 +12,6 @@ intents:
 - mood_great
 - mood_unhappy
 - inform_name
-
 entities: 
   - name
 slots:
