@@ -41,6 +41,12 @@ responses:
   - text: Eu sou um robo
   - text: Sou um robo feito pelo time de DGP
   - text: To vivo só nas linhas de code
+  utter_classes_hours:
+  - text: No gera temos aulas das oito horas ao meio dia , no período da manhã. Ou das sete até as 10 e meia da noite no período noturno.
+  - text: No gera temos aulas das 8:00AM - 12:PM de manhã, ou das 07:00PM - 10:30PM de noite.
+  - text: No gera temos aulas das 8hrs às 12hrs , no período da manhã. Ou das 19hrs ás 22hrs no período noturno.
+  utter_recruitmentProcessHOW:
+  - text: "O processo seletivo ocorre em várias etapas:\n\t1- inscrição\n\t2- Prova & análise socieconômica.\n\Divulgação da lista de aprovados, caso seu nome esteja lá só precisa fazer a matrícula"
 actions:
 - action_get_name
 - action_show_time

@@ -82,3 +82,13 @@ nlu:
     - sou [anna](name)
     - me chamo [johnnatan](name)
     - meu nome é [carlos](name)
+- intent: classes_hours
+  examples: |
+    - Quais são os horários de aula do GeraBixo ?
+    - Quando tem aula no Gera?
+    - De quando são as aulas do gera?
+- intent: recruitmentProcess
+  examples: |
+    - Quais são os horários de aula do GeraBixo ?
+    - Quando tem aula no Gera?
+    - De quando são as aulas do gera?
