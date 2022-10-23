@@ -44,4 +44,3 @@ responses:
 actions:
 - action_get_name
 - action_show_time
-- utter_greet

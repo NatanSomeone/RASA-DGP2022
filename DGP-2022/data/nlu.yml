@@ -5,79 +5,66 @@ nlu:
     - hey
     - hello
     - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
     - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
     - oi
+    - olá 
+    - bom dia
+    - boa tarde
+    - boa noite
+    - eai
+    - bão 
 - intent: goodbye
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
     - bye
     - goodbye
-    - have a nice day
-    - see you around
     - bye bye
-    - see you later
+    - Tchau
+    - xau
+    - flw
+    - fechow
+    - até
+    - passar bem
 - intent: affirm
   examples: |
     - yes
     - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - de fato
+    - claro
+    - parece bom
+    - correto
+    - isso
+    - simm
+    - sim
+    - yap
+    - s
+    - pode ser
 - intent: deny
   examples: |
     - no
     - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - de jeito algum
+    - não
+    - nem
+    - nada
+    - ñ
 - intent: mood_great
   examples: |
     - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - perfeito
+    - otimo
+    - incrível
+    - maravilha
+    - maravilhoso
+    - estou bem
+    - estou ótimo
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - meu dia foi horrível
+    - meu dia foi péssimo
+    - estou triste
+    - triste
+    - triste triste
+    - desapontado
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -86,16 +73,12 @@ nlu:
     - am I talking to a human?
 - intent: give_time
   examples: |
-    - can you tell me what time it is
-    - tell me the time
-    - got the time
-    - what time is it
     - time
+    - horas
+    - tem horas
+    - sabe que horas são
 - intent: inform_name
   examples: |
-    - meu nome é [joão](name)
-    - me chamo [carlos](name)
-    - sou [johnnatan](name)
     - sou [anna](name)
     - me chamo [johnnatan](name)
     - meu nome é [carlos](name)

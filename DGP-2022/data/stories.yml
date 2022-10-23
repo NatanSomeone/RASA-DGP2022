@@ -41,13 +41,6 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: inform_name
-  - action: action_get_name
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: inform_name
     entities:
     - name: anna
   - slot_was_set:
