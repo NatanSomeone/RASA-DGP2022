@@ -25,11 +25,11 @@ def main():
     # created automatically when the authorization flow completes for the first
     # time.
     key_file_location = os.path.join(os.path.expanduser('~'), 'rasa2022dgp-2ef451d6a1cf.json')
-    
+    api_key = os.environ['GKEY'];
     if os.path.exists(key_file_location):
         creds = ServiceAccountCredentials.from_json_keyfile_name(key_file_location, SCOPES)
     try:
-        service = build('sheets', 'v4', credentials=creds)
+        service = build('sheets', 'v4', credentials=creds, developerKey=api_key)
 
         # Call the Sheets API
         sheet = service.spreadsheets()
