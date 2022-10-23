@@ -12,7 +12,7 @@ intents:
 - mood_great
 - mood_unhappy
 - inform_name
-  use_entities: true
+
 entities: 
   - name
 slots:
