@@ -1,0 +1,13 @@
+
+version: "2.0"
+stories:
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: greet
+  - action: utter_greet
+  - intent: give_time
+  - action: action_show_time
+  - intent: "\x1A"
+  - action: "\x1A"
