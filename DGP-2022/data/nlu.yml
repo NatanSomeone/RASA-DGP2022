@@ -93,6 +93,6 @@ nlu:
 
 - intent: inform_name
   examples: |
-    - meu nome é [](name)
-    - me chamo [](name)
-    - sou [](name)
+    - meu nome é [joão](name)
+    - me chamo [carlos](name)
+    - sou [johnnatan](name)
