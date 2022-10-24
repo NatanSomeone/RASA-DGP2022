@@ -36,15 +36,35 @@ stories:
   - intent: give_time
   - action: action_show_time
 
-- story: path about gera recruitment
+- story: path about gera recruitment how
   steps:
   - intent: recruitmentProcessHOW
   - action: utter_recruitmentProcessHOW
 
-- story: path about gera recruitment
+- story: path about gera recruitment when
   steps:
   - intent: recruitmentProcessWHEN
   - action: utter_recruitmentProcessWHEN
+
+- story: path about gera reinforcement Classes HOW
+  steps:
+  - intent: reinforcementClassesHOW
+  - action: utter_reinforcementClassesHOW
+
+- story: path about gera list of Activities
+  steps:
+  - intent: listActivities
+  - action: utter_listActivities
+
+- story: path about gera mock tests HOW
+  steps:
+  - intent: mockTestsHOW
+  - action: utter_mockTestsHOW
+
+- story: path about gera adm structure
+  steps:
+  - intent: aboutTheCouseStructure
+  - action: utter_aboutTheCouseStructure
 
 - story: path informing name
   steps:
