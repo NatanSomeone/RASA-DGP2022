@@ -44,6 +44,11 @@ rules:
   - intent: mockTestsHOW
   - action: utter_mockTestsHOW
 
+- rule: talks about gera 
+  steps:
+  - intent: aboutTheCourse
+  - action: utter_aboutTheCourse
+
 - rule: talks about gera adm structure
   steps:
   - intent: aboutTheCouseStructure

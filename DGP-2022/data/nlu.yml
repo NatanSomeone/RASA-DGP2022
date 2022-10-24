@@ -119,7 +119,9 @@ nlu:
     - Como funcionam as aulas de reforço ?
 - intent: mockTestsHOW
   examples: |
-    - Como funciona os simulados ?
+    - Quais atividades o [GeraBixo](prep_course) realiza ?
+    - o que que o [gera](prep_course) faz?
+    - o que tem no [gera](prep_course) ?
 - intent: aboutTheCourse
   examples: |
     - Oq é o [GeraBixo](prep_course) ?
