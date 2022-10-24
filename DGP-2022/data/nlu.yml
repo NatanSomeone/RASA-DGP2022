@@ -87,8 +87,17 @@ nlu:
     - Quais são os horários de aula do GeraBixo ?
     - Quando tem aula no Gera?
     - De quando são as aulas do gera?
-- intent: recruitmentProcess
+- intent: recruitmentProcessHOW
   examples: |
-    - Quais são os horários de aula do GeraBixo ?
-    - Quando tem aula no Gera?
-    - De quando são as aulas do gera?
+    - Como funciona o processo seletivo de alunos ?
+    - Como me inscrevo no gera ?
+    - Como me inscrevo no gerabixo ?
+    - Como é a matricula do gera ?
+    - Como é o processo seletivo do gerabixo ?
+
+- intent: recruitmentProcessWHEN
+  examples: |
+    - Quando abre o processo seletivo ?
+    - Quando é a matricula do gerabixo ?
+    - Quando é o processo seletivo do gera ?
+

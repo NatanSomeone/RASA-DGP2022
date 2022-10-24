@@ -36,6 +36,16 @@ stories:
   - intent: give_time
   - action: action_show_time
 
+- story: path about gera recruitment
+  steps:
+  - intent: recruitmentProcessHOW
+  - action: utter_recruitmentProcessHOW
+
+- story: path about gera recruitment
+  steps:
+  - intent: recruitmentProcessWHEN
+  - action: utter_recruitmentProcessWHEN
+
 - story: path informing name
   steps:
   - intent: greet
