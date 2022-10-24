@@ -11,3 +11,33 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: talk about gera recruitment how
+  steps:
+  - intent: recruitmentProcessHOW
+  - action: utter_recruitmentProcessHOW
+
+- rule: talk about gera recruitment when
+  steps:
+  - intent: recruitmentProcessWHEN
+  - action: utter_recruitmentProcessWHEN
+
+- rule: talk about gera reinforcement Classes HOW
+  steps:
+  - intent: reinforcementClassesHOW
+  - action: utter_reinforcementClassesHOW
+
+- rule: talk about gera list of Activities
+  steps:
+  - intent: listActivities
+  - action: utter_listActivities
+
+- rule: talk about gera mock tests HOW
+  steps:
+  - intent: mockTestsHOW
+  - action: utter_mockTestsHOW
+
+- rule: talk about gera adm structure
+  steps:
+  - intent: aboutTheCouseStructure
+  - action: utter_aboutTheCouseStructure
