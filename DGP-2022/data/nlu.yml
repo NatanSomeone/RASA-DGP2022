@@ -89,6 +89,7 @@ nlu:
     - De quando são as aulas do gera?
 - intent: recruitmentProcessHOW
   examples: |
+    - como é o ps do gera?
     - Como funciona o processo seletivo de alunos ?
     - Como me inscrevo no gera ?
     - Como me inscrevo no gerabixo ?
@@ -97,6 +98,7 @@ nlu:
 
 - intent: recruitmentProcessWHEN
   examples: |
+    - qnd tem ps do gera ?
     - Quando abre o processo seletivo ?
     - Quando é a matricula do gerabixo ?
     - Quando é o processo seletivo do gera ?
