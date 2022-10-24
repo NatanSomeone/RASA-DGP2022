@@ -2,6 +2,13 @@ version: "2.0"
 
 rules:
 
+- rule: story with a slot
+  steps:
+  - intent: greet
+  - slot_was_set:
+    - name
+  - action: utter_greet_user_by_name
+
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: goodbye

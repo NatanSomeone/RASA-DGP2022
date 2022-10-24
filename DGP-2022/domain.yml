@@ -32,6 +32,7 @@ responses:
   - text: 'Oi meu AMIGO, como tá ? '
   - text: 'Faaala aí bixo, bora pra um rolê ? '
   - text: 'Eai mano, vai encarar? '
+  utter_greet_by_name:
   - text: 'Oi {name}, tudo bom ? '
   - text: 'Fala {name}, blz ? '
   utter_cheer_up:
