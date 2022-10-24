@@ -46,10 +46,10 @@ responses:
   - text: No gera temos aulas das 8:00AM - 12:PM de manhã, ou das 07:00PM - 10:30PM de noite.
   - text: No gera temos aulas das 8hrs às 12hrs , no período da manhã. Ou das 19hrs ás 22hrs no período noturno.
   utter_recruitmentProcessHOW:
-  - text: "O processo seletivo ocorre em várias etapas:\n\t1- inscrição\n\t2- Prova & análise socieconômica.\n\Divulgação da lista de aprovados, caso seu nome esteja lá só precisa fazer a matrícula"
+  - text: O processo seletivo ocorre em várias etapas:\n\t1- inscrição\n\t2- Prova & análise socieconômica.\n\Divulgação da lista de aprovados, caso seu nome esteja lá só precisa fazer a matrícula
   utter_recruitmentProcessWHEN:
-  - text: "A previsão é para Janeiro, mas se interessou acesse o [link](https://forms.gle/YAHrTgmdoyHhT4pHA) e preencha o formulário que entraremos em contato com os próximos passos do processo seletivo. "
-  - text: "Provávelmente terá PS em Janeiro, mas se interessou já podemos estar em contato se preencher o formulário através do [link](https://forms.gle/YAHrTgmdoyHhT4pHA), enviaremos com os próximos passos do processo seletivo. "
+  - text: A previsão é para Janeiro, mas se interessou acesse o [link](https://forms.gle/YAHrTgmdoyHhT4pHA) e preencha o formulário que entraremos em contato com os próximos passos do processo seletivo. 
+  - text: Provávelmente terá PS em Janeiro, mas se interessou já podemos estar em contato se preencher o formulário através do [link](https://forms.gle/YAHrTgmdoyHhT4pHA), enviaremos com os próximos passos do processo seletivo. 
   
 actions:
 - action_get_name
