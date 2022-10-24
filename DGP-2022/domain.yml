@@ -14,6 +14,11 @@ intents:
 - mood_unhappy
 - recruitmentProcessHOW
 - recruitmentProcessWHEN
+- reinforcementClassesHOW
+- listActivities
+- mockTestsHOW
+- aboutTheCourse
+- aboutTheCouseStructure
 entities:
 - name
 slots:
@@ -52,7 +57,16 @@ responses:
   utter_recruitmentProcessWHEN:
   - text: A previsão é para Janeiro, mas se interessou acesse o [link](https://forms.gle/YAHrTgmdoyHhT4pHA) e preencha o formulário que entraremos em contato com os próximos passos do processo seletivo. 
   - text: Provávelmente terá PS em Janeiro, mas se interessou já podemos estar em contato se preencher o formulário através do [link](https://forms.gle/YAHrTgmdoyHhT4pHA), enviaremos com os próximos passos do processo seletivo. 
-  
+  utter_reinforcementClassesHOW:
+  - text: As aulas de reforço ocorrem online no período da tarde ou no sábado. O calendário das aulas de reforço é disponibilizado semanalmente, para mais informações entre em contato com qualquer membro da Comissão de Atividades Extras.
+  utter_listActivities:
+  - text: Além das aulas normais e das aulas de reforço GeraBixo organiza rodas de conversa, sarau, atividades recreativas como o CineGera, e simulados. 
+  utter_mockTestsHOW:
+  - text: Os simulados são organizados pela Comissão de Simulados. Alguns são realizados presencialmente, mas também tem os realizados online também tem os focados em faculdades de medicina e específico para redação. Para mais informações acesse a [planilha de simulados](https://docs.google.com/spreadsheets/d/1fyP20i1qjXhVSqgXyukZz_2i4mA2ts6pTNDKVB3dmPI/edit#gid=0) ou entre em contato com qualquer membro da Comissão de Simulados.
+  utter_aboutTheCourse:
+  - text: O GeraBixo é o cursinho pré-vestibular gratuito da Unesp Sorocaba. Nosso objetivo é promover um ensino gratuito para estudantes de Sorocaba e região que possuem o sonho de entrar em uma universidade.
+  utter_aboutTheCouseStructure:
+  - text: O Cursinho é dividido em uma Diretoria Geral e sete comissões:\n\tAlunos, Professores, Marketing, Financeiro, Dados, Simulados e Atividades Extras.
 actions:
 - action_get_name
 - action_show_time

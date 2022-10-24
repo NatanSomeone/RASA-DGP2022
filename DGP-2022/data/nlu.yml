@@ -95,11 +95,28 @@ nlu:
     - Como me inscrevo no gerabixo ?
     - Como é a matricula do gera ?
     - Como é o processo seletivo do gerabixo ?
-
 - intent: recruitmentProcessWHEN
   examples: |
     - qnd tem ps do gera ?
     - Quando abre o processo seletivo ?
     - Quando é a matricula do gerabixo ?
     - Quando é o processo seletivo do gera ?
-
+- intent: reinforcementClassesHOW
+  examples: |
+    - Como funcionam as aulas de reforço ?
+- intent: listActivities
+  examples: |
+    - Como funcionam as aulas de reforço ?
+- intent: mockTestsHOW
+  examples: |
+    - Como funciona os simulados ?
+- intent: aboutTheCourse
+  examples: |
+    - Oq é o GeraBixo ?
+    - O que é o Gera ?
+- intent: aboutTheCouseStructure
+  examples: |
+    - Qual a estrutura da administração do cursinho ?
+    - como é a divisão do cursinho ? 
+    - como é a estrutura do gera ? 
+    - como é a estrutura do geraBixo ? 
