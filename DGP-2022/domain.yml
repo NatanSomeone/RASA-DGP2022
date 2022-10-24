@@ -21,6 +21,7 @@ intents:
 - aboutTheCouseStructure
 entities:
 - name
+- prep_course
 slots:
   name:
     type: text
@@ -31,6 +32,8 @@ responses:
   - text: 'Oi meu AMIGO, como tá ? '
   - text: 'Faaala aí bixo, bora pra um rolê ? '
   - text: 'Eai mano, vai encarar? '
+  - text: 'Oi {name}, tudo bom ? '
+  - text: 'Fala {name}, blz ? '
   utter_cheer_up:
   - text: Aqui algo que pode te animar
     image: https://i.imgur.com/nGF1K8f.jpg

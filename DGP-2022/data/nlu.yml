@@ -1,5 +1,14 @@
 version: "2.0"
 nlu:
+
+- synonym: prep_course
+  examples: |
+    - gera
+    - geraBixo
+    - cursinho
+    - gera bixo
+
+
 - intent: greet
   examples: |
     - hey
@@ -38,6 +47,7 @@ nlu:
     - yap
     - s
     - pode ser
+    - bão 
 - intent: deny
   examples: |
     - no
@@ -84,23 +94,23 @@ nlu:
     - meu nome é [carlos](name)
 - intent: classes_hours
   examples: |
-    - Quais são os horários de aula do GeraBixo ?
-    - Quando tem aula no Gera?
-    - De quando são as aulas do gera?
+    - Quais são os horários de aula do [GeraBixo](prep_course) ?
+    - Quando tem aula no [Gera](prep_course)?
+    - De quando são as aulas do [gera](prep_course)?
 - intent: recruitmentProcessHOW
   examples: |
-    - como é o ps do gera?
+    - como é o ps do [gera](prep_course)?
     - Como funciona o processo seletivo de alunos ?
-    - Como me inscrevo no gera ?
-    - Como me inscrevo no gerabixo ?
-    - Como é a matricula do gera ?
-    - Como é o processo seletivo do gerabixo ?
+    - Como me inscrevo no [gera](prep_course) ?
+    - Como me inscrevo no [gerabixo](prep_course) ?
+    - Como é a matricula do [gera](prep_course) ?
+    - Como é o processo seletivo do [gerabixo](prep_course) ?
 - intent: recruitmentProcessWHEN
   examples: |
-    - qnd tem ps do gera ?
+    - qnd tem ps do [gera](prep_course) ?
     - Quando abre o processo seletivo ?
-    - Quando é a matricula do gerabixo ?
-    - Quando é o processo seletivo do gera ?
+    - Quando é a matricula do [gerabixo](prep_course) ?
+    - Quando é o processo seletivo do [gera](prep_course) ?
 - intent: reinforcementClassesHOW
   examples: |
     - Como funcionam as aulas de reforço ?
@@ -112,11 +122,11 @@ nlu:
     - Como funciona os simulados ?
 - intent: aboutTheCourse
   examples: |
-    - Oq é o GeraBixo ?
-    - O que é o Gera ?
+    - Oq é o [GeraBixo](prep_course) ?
+    - O que é o [Gera](prep_course) ?
 - intent: aboutTheCouseStructure
   examples: |
-    - Qual a estrutura da administração do cursinho ?
-    - como é a divisão do cursinho ? 
-    - como é a estrutura do gera ? 
-    - como é a estrutura do geraBixo ? 
+    - Qual a estrutura da administração do [cursinho](prep_course) ?
+    - como é a divisão do [cursinho](prep_course) ? 
+    - como é a estrutura do [gera](prep_course) ? 
+    - como é a estrutura do [geraBixo](prep_course) ? 
