@@ -7,7 +7,7 @@ rules:
   - intent: greet
   - slot_was_set:
     - name
-  - action: utter_greet_user_by_name
+  - action: utter_greet_by_name
 
 - rule: Say goodbye anytime the user says goodbye
   steps:
