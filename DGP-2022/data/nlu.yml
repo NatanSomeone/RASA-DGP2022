@@ -48,6 +48,10 @@ nlu:
     - s
     - pode ser
     - bão 
+- intent: thanks
+  examples: |
+    - obrigado
+    - muito obrigado
 - intent: deny
   examples: |
     - no
@@ -107,6 +111,7 @@ nlu:
     - Como é o processo seletivo do [gerabixo](prep_course) ?
 - intent: recruitmentProcessWHEN
   examples: |
+    - quando são as incrições?
     - qnd tem ps do [gera](prep_course) ?
     - Quando abre o processo seletivo ?
     - Quando é a matricula do [gerabixo](prep_course) ?
@@ -116,12 +121,12 @@ nlu:
     - Como funcionam as aulas de reforço ?
 - intent: listActivities
   examples: |
-    - Como funcionam as aulas de reforço ?
-- intent: mockTestsHOW
-  examples: |
-    - Quais atividades o [GeraBixo](prep_course) realiza ?
+     - Quais atividades o [GeraBixo](prep_course) realiza ?
     - o que que o [gera](prep_course) faz?
     - o que tem no [gera](prep_course) ?
+- intent: mockTestsHOW
+  examples: |
+    - Como funciona os simulados ?
 - intent: aboutTheCourse
   examples: |
     - Oq é o [GeraBixo](prep_course) ?

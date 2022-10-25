@@ -18,6 +18,7 @@ intents:
 - listActivities
 - mockTestsHOW
 - aboutTheCourse
+- classes_hours
 - aboutTheCouseStructure
 entities:
 - name
