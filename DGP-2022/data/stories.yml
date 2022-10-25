@@ -59,20 +59,6 @@ stories:
     - name: carlos
   - action: action_get_name
 
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: inform_name
-  - action: utter_cheer_up
-
-- story: interactive_story_2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: inform_name
-  - action: utter_greet_by_name
-
 - story: interactive_story_3
   steps:
   - intent: greet
@@ -83,11 +69,5 @@ stories:
   - slot_was_set:
     - name: carlito
   - action: action_get_name
-  - intent: greet
-  - action: utter_greet_by_name
-  - intent: aboutTheCourse
-    entities:
-    - prep_course: prep_course
-  - action: utter_aboutTheCourse
   - intent: greet
   - action: utter_greet_by_name

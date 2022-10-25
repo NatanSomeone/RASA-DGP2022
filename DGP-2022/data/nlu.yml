@@ -136,9 +136,10 @@ nlu:
     - como é a divisão do [cursinho](prep_course) ? 
     - como é a estrutura do [gera](prep_course) ? 
     - como é a estrutura do [geraBixo](prep_course) ? 
+
 - intent: askingForTeacherMaterial
   examples: |
-    - Quem é o [professor](TeacherMaterialKeys) de [Algebra]{"entity": "subject", "group": "TeacherMaterial"} de [noite](TeacherShift)
+    - Quem é o [professor](TeacherMaterialKeys) de [Algebra](subject) de [noite](TeacherShift)
   
 synonym: prep_course
   examples: |

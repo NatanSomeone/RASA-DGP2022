@@ -81,4 +81,3 @@ actions:
 - utter_aboutTheCourse
 - utter_cheer_up
 - utter_greet
-- utter_greet_by_name
