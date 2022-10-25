@@ -53,3 +53,8 @@ rules:
   steps:
   - intent: aboutTheCouseStructure
   - action: utter_aboutTheCouseStructure
+
+- rule: Tells Teacher Name
+  steps:
+  - intent: askingForTeacherName
+  - action: utter_askingForTeacherName
