@@ -32,16 +32,16 @@ entities:
   - name
   - prep_course
   - TeacherShift:
-    groups:
-    - TeacherMaterial
+      groups:
+      - TeacherMaterial
   - subject:
-    groups:
-    - TeacherMaterial
+      groups:
+      - TeacherMaterial
   - Teacher:
-    groups:
-    - TeacherMaterial
-    roles:
-    - TeacherMatKey
+      groups:
+      - TeacherMaterial
+      roles:
+      - TeacherMatKey
 slots:
   name:
     type: text
