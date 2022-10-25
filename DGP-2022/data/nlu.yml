@@ -1,5 +1,13 @@
 version: "2.0"
 nlu:
+
+- synonym: prep_course
+  examples: |
+    - gera
+    - geraBixo
+    - cursinho
+    - gera bixo
+
 - intent: greet
   examples: |
     - hey
@@ -139,11 +147,5 @@ nlu:
 
 - intent: askingForTeacherMaterial
   examples: |
-    - Quem é o [professor](TeacherMaterialKeys) de [Algebra](subject) de [noite](TeacherShift)
+    - Quem é o [professor](TeacherMaterialKeys) de [Algebra]{"entity": "subject", "group": "TeacherMaterial"} de [noite](TeacherShift)
   
-synonym: prep_course
-  examples: |
-    - gera
-    - geraBixo
-    - cursinho
-    - gera bixo
