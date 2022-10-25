@@ -90,4 +90,8 @@ responses:
   utter_aboutTheCouseStructure:
   - text: O Cursinho é dividido em uma Diretoria Geral e sete comissões:\n\tAlunos, Professores, Marketing, Financeiro, Dados, Simulados e Atividades Extras.
   utter_askingForTeacherName:
-  - text: O Cursinho é dividido em uma Diretoria Geral e sete comissões:\n\tAlunos, Professores, Marketing, Financeiro, Dados, Simulados e Atividades Extras.
+  - text: é claudio.
+  - text: dá aula no periodo da {TeacherShift}.
+  - text: o {Teacher} dá aula no periodo da {TeacherShift}.
+  - text: o {Teacher} dá aula de {subject}.
+  - text: o {Teacher} dá aula de {subject} no periodo da {TeacherShift}.
