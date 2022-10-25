@@ -8,6 +8,12 @@ nlu:
     - cursinho
     - gera bixo
 
+- lookup: TeacherShift
+  examples: |
+    - manhã
+    - reforço
+    - noite
+
 - lookup: subject
   examples: |
     - Álgebra
@@ -171,12 +177,15 @@ nlu:
     - como é a divisão do [cursinho](prep_course) ? 
     - como é a estrutura do [gera](prep_course) ? 
     - como é a estrutura do [geraBixo](prep_course) ? 
+# Retornar professores -have slot [teacher]
+# | por turno - + [teacheshift]
+# | por diciplina - + [subject]
+# | por diciplina e turno - + [subject] & [teachershift]
+# | por categoria de diciplina - + [subjectCat] 
+# | por categoria de diciplina e turno - + [subjectcat] & [teachershift]
 
 - intent: askingForTeacherName
   examples: |
-    - Quem é o [professor]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} de [Algebra]{"entity": "subject", "group": "TeacherMaterial"} de [noite]{"entity":"TeacherShift","group":"TeacherMaterial"}
-    - Quem [dá aula]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} de [Algebra]{"entity": "subject", "group": "TeacherMaterial"} de [noite]{"entity":"TeacherShift","group":"TeacherMaterial"}
-    - Quem [dá aula]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} de [Algebra]{"entity": "subject", "group": "TeacherMaterial"}
-    - Quem é o [professor]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} de [Algebra]{"entity": "subject", "group": "TeacherMaterial"}
-    - Quem são os [professores]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} de [biologia animal]{"entity": "subject", "group": "TeacherMaterial"} de [noite]{"entity":"TeacherShift","group":"TeacherMaterial"}
-  
+    - Quais [professores]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} dão aula de [manhã]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
+    - Que [professores]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} dão aula de [noite]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
+    - [Quem] {"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} dá aula de [reforço]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
