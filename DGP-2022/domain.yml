@@ -2,6 +2,12 @@ version: '2.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+actions:
+- action_get_name
+- action_show_time
+- utter_aboutTheCourse
+- utter_cheer_up
+- utter_greet
 intents:
 - aboutTheCourse
 - aboutTheCouseStructure
@@ -77,9 +83,3 @@ responses:
   - text: O GeraBixo é o cursinho pré-vestibular gratuito da Unesp Sorocaba. Nosso objetivo é promover um ensino gratuito para estudantes de Sorocaba e região que possuem o sonho de entrar em uma universidade.
   utter_aboutTheCouseStructure:
   - text: O Cursinho é dividido em uma Diretoria Geral e sete comissões:\n\tAlunos, Professores, Marketing, Financeiro, Dados, Simulados e Atividades Extras.
-actions:
-- action_get_name
-- action_show_time
-- utter_aboutTheCourse
-- utter_cheer_up
-- utter_greet
