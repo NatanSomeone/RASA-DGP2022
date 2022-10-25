@@ -3,26 +3,26 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- aboutTheCourse
+- aboutTheCouseStructure
 - affirm
 - bot_challenge
+- classes_hours
 - deny
 - give_time
 - goodbye
 - greet
 - inform_name
+- listActivities
+- mockTestsHOW
 - mood_great
 - mood_unhappy
 - recruitmentProcessHOW
 - recruitmentProcessWHEN
 - reinforcementClassesHOW
-- listActivities
-- mockTestsHOW
-- aboutTheCourse
-- classes_hours
-- aboutTheCouseStructure
 entities:
-- name
 - prep_course
+- name
 slots:
   name:
     type: text
@@ -60,12 +60,12 @@ responses:
   utter_recruitmentProcessHOW:
   - text: O processo seletivo ocorre em várias etapas:\n\t1- inscrição\n\t2- Prova & análise socieconômica.\n\Divulgação da lista de aprovados, caso seu nome esteja lá só precisa fazer a matrícula
   utter_recruitmentProcessWHEN:
-  - text: A previsão é para Janeiro, mas se interessou acesse o [link](https://forms.gle/YAHrTgmdoyHhT4pHA) e preencha o formulário que entraremos em contato com os próximos passos do processo seletivo. 
-  - text: Provávelmente terá PS em Janeiro, mas se interessou já podemos estar em contato se preencher o formulário através do [link](https://forms.gle/YAHrTgmdoyHhT4pHA), enviaremos com os próximos passos do processo seletivo. 
+  - text: A previsão é para Janeiro, mas se interessou acesse o [link](https://forms.gle/YAHrTgmdoyHhT4pHA) e preencha o formulário que entraremos em contato com os próximos passos do processo seletivo.
+  - text: Provávelmente terá PS em Janeiro, mas se interessou já podemos estar em contato se preencher o formulário através do [link](https://forms.gle/YAHrTgmdoyHhT4pHA), enviaremos com os próximos passos do processo seletivo.
   utter_reinforcementClassesHOW:
   - text: As aulas de reforço ocorrem online no período da tarde ou no sábado. O calendário das aulas de reforço é disponibilizado semanalmente, para mais informações entre em contato com qualquer membro da Comissão de Atividades Extras.
   utter_listActivities:
-  - text: Além das aulas normais e das aulas de reforço GeraBixo organiza rodas de conversa, sarau, atividades recreativas como o CineGera, e simulados. 
+  - text: Além das aulas normais e das aulas de reforço GeraBixo organiza rodas de conversa, sarau, atividades recreativas como o CineGera, e simulados.
   utter_mockTestsHOW:
   - text: Os simulados são organizados pela Comissão de Simulados. Alguns são realizados presencialmente, mas também tem os realizados online também tem os focados em faculdades de medicina e específico para redação. Para mais informações acesse a [planilha de simulados](https://docs.google.com/spreadsheets/d/1fyP20i1qjXhVSqgXyukZz_2i4mA2ts6pTNDKVB3dmPI/edit#gid=0) ou entre em contato com qualquer membro da Comissão de Simulados.
   utter_aboutTheCourse:
@@ -75,3 +75,7 @@ responses:
 actions:
 - action_get_name
 - action_show_time
+- utter_aboutTheCourse
+- utter_cheer_up
+- utter_greet
+- utter_greet_by_name

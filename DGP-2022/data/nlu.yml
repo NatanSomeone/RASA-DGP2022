@@ -1,14 +1,5 @@
 version: "2.0"
 nlu:
-
-- synonym: prep_course
-  examples: |
-    - gera
-    - geraBixo
-    - cursinho
-    - gera bixo
-
-
 - intent: greet
   examples: |
     - hey
@@ -16,12 +7,13 @@ nlu:
     - hi
     - hey dude
     - oi
-    - olá 
+    - olá
     - bom dia
     - boa tarde
     - boa noite
     - eai
-    - bão 
+    - bão
+    - Eai , salve
 - intent: goodbye
   examples: |
     - bye
@@ -47,7 +39,7 @@ nlu:
     - yap
     - s
     - pode ser
-    - bão 
+    - bão
 - intent: thanks
   examples: |
     - obrigado
@@ -96,6 +88,9 @@ nlu:
     - sou [anna](name)
     - me chamo [johnnatan](name)
     - meu nome é [carlos](name)
+    - Me chame de Carlito
+    - Me chame de carlito
+    - Me chame de [carlito](name)
 - intent: classes_hours
   examples: |
     - Quais são os horários de aula do [GeraBixo](prep_course) ?
@@ -134,9 +129,16 @@ nlu:
   examples: |
     - Oq é o [GeraBixo](prep_course) ?
     - O que é o [Gera](prep_course) ?
+    - O que é o [gera]{"entity": "prep_course", "value": "prep_course"}?
 - intent: aboutTheCouseStructure
   examples: |
     - Qual a estrutura da administração do [cursinho](prep_course) ?
-    - como é a divisão do [cursinho](prep_course) ? 
-    - como é a estrutura do [gera](prep_course) ? 
-    - como é a estrutura do [geraBixo](prep_course) ? 
+    - como é a divisão do [cursinho](prep_course) ?
+    - como é a estrutura do [gera](prep_course) ?
+    - como é a estrutura do [geraBixo](prep_course) ?
+- synonym: prep_course
+  examples: |
+    - gera
+    - geraBixo
+    - cursinho
+    - gera bixo
