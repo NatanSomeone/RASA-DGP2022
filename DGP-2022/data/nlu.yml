@@ -119,9 +119,10 @@ nlu:
 - intent: reinforcementClassesHOW
   examples: |
     - Como funcionam as aulas de reforço ?
+    - o que seriam as aulas de reforço?
 - intent: listActivities
   examples: |
-     - Quais atividades o [GeraBixo](prep_course) realiza ?
+    - Quais atividades o [GeraBixo](prep_course) realiza ?
     - o que que o [gera](prep_course) faz?
     - o que tem no [gera](prep_course) ?
 - intent: mockTestsHOW
