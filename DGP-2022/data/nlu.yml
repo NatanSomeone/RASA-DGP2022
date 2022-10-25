@@ -133,10 +133,15 @@ nlu:
 - intent: aboutTheCouseStructure
   examples: |
     - Qual a estrutura da administração do [cursinho](prep_course) ?
-    - como é a divisão do [cursinho](prep_course) ?
-    - como é a estrutura do [gera](prep_course) ?
-    - como é a estrutura do [geraBixo](prep_course) ?
-- synonym: prep_course
+    - como é a divisão do [cursinho](prep_course) ? 
+    - como é a estrutura do [gera](prep_course) ? 
+    - como é a estrutura do [geraBixo](prep_course) ? 
+- intent: askingForTeacherMaterial
+  examples: |
+    - Quem é o [professor](TeacherMaterialKeys) de [Algebra]{"entity": "subject", "group": "TeacherMaterial"} de [noite](turno)
+    - Quem é o [professor](TeacherMaterialKeys) de [Algebra]{"entity": "subject", "group": "TeacherMaterial"} de [noite](turno)
+  
+synonym: prep_course
   examples: |
     - gera
     - geraBixo

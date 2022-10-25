@@ -22,6 +22,8 @@ intents:
 - reinforcementClassesHOW
 entities:
 - prep_course
+- subject
+- TeacherMaterialKeys
 - name
 slots:
   name:
