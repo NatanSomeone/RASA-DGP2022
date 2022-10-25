@@ -186,6 +186,6 @@ nlu:
 
 - intent: askingForTeacherName
   examples: |
-    - Quais [professores]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} dão aula de [manhã]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
-    - Que [professores]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} dão aula de [noite]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
-    - [Quem] {"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} dá aula de [reforço]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
+    - Quais [professores]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} dão aula de [manhã]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
+    - Que [professores]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} dão aula de [noite]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
+    - [Quem] {"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} dá aula de [reforço]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
