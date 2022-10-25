@@ -27,7 +27,7 @@ intents:
 - recruitmentProcessHOW
 - recruitmentProcessWHEN
 - reinforcementClassesHOW
-- askingForTeacherMaterial
+- askingForTeacherName
 entities:
 - name
 - prep_course
@@ -89,5 +89,5 @@ responses:
   - text: O GeraBixo é o cursinho pré-vestibular gratuito da Unesp Sorocaba. Nosso objetivo é promover um ensino gratuito para estudantes de Sorocaba e região que possuem o sonho de entrar em uma universidade.
   utter_aboutTheCouseStructure:
   - text: O Cursinho é dividido em uma Diretoria Geral e sete comissões:\n\tAlunos, Professores, Marketing, Financeiro, Dados, Simulados e Atividades Extras.
-  utter_askingForTeacherMaterial:
+  utter_askingForTeacherName:
   - text: O Cursinho é dividido em uma Diretoria Geral e sete comissões:\n\tAlunos, Professores, Marketing, Financeiro, Dados, Simulados e Atividades Extras.

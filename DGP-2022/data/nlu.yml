@@ -34,7 +34,7 @@ nlu:
     - Química Geral
     - Química Orgânica
     - Sociologia
-    
+
 - intent: greet
   examples: |
     - hey
@@ -172,9 +172,11 @@ nlu:
     - como é a estrutura do [gera](prep_course) ? 
     - como é a estrutura do [geraBixo](prep_course) ? 
 
-- intent: askingForTeacherMaterial
+- intent: askingForTeacherName
   examples: |
-    - Quem é o [professor]{"entity": "TeacherMaterialKeys","role":"Teacher", "group": "TeacherMaterial"} de [Algebra]{"entity": "subject", "group": "TeacherMaterial"} de [noite](TeacherShift)
-    - Quem [dá aula]{"entity": "TeacherMaterialKeys","role":"Teacher", "group": "TeacherMaterial"} de [Algebra]{"entity": "subject", "group": "TeacherMaterial"} de [noite](TeacherShift)
-    - Quem são os [professores]{"entity": "TeacherMaterialKeys","role":"Teacher", "group": "TeacherMaterial"} de [biologia animal]{"entity": "subject", "group": "TeacherMaterial"} de [noite](TeacherShift)
+    - Quem é o [professor]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} de [Algebra]{"entity": "subject", "group": "TeacherMaterial"} de [noite]{"entity":"TeacherShift","group":"TeacherMaterial"}
+    - Quem [dá aula]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} de [Algebra]{"entity": "subject", "group": "TeacherMaterial"} de [noite]{"entity":"TeacherShift","group":"TeacherMaterial"}
+    - Quem [dá aula]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} de [Algebra]{"entity": "subject", "group": "TeacherMaterial"}
+    - Quem é o [professor]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} de [Algebra]{"entity": "subject", "group": "TeacherMaterial"}
+    - Quem são os [professores]{"entity": "Teacher","role":"TeacherMaterialKeys", "group": "TeacherMaterial"} de [biologia animal]{"entity": "subject", "group": "TeacherMaterial"} de [noite]{"entity":"TeacherShift","group":"TeacherMaterial"}
   
