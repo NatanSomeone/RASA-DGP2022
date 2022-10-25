@@ -21,10 +21,11 @@ intents:
 - recruitmentProcessWHEN
 - reinforcementClassesHOW
 entities:
+- name
 - prep_course
 - subject
 - TeacherMaterialKeys
-- name
+- TeacherShift
 slots:
   name:
     type: text
