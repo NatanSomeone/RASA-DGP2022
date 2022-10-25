@@ -8,6 +8,33 @@ nlu:
     - cursinho
     - gera bixo
 
+- lookup: subject
+  examples: |
+    - Álgebra
+    - Biologia (reforço)
+    - Biologia Animal
+    - Biologia Botânica
+    - Biologia Celular
+    - Filosofia
+    - Física Elétrica
+    - Física Mecânica
+    - Física Ótica
+    - Físico-Química
+    - Geografia do Brasil
+    - Geografia Geral
+    - Geometria
+    - Gramática
+    - História do Brasil
+    - História Geral
+    - Inglês Avançado
+    - Inglês Básico
+    - Redação
+    - Literatura
+    - Matemática Fundamental
+    - Química Geral
+    - Química Orgânica
+    - Sociologia
+    
 - intent: greet
   examples: |
     - hey
@@ -147,5 +174,7 @@ nlu:
 
 - intent: askingForTeacherMaterial
   examples: |
-    - Quem é o [professor](TeacherMaterialKeys) de [Algebra]{"entity": "subject", "group": "TeacherMaterial"} de [noite](TeacherShift)
+    - Quem é o [professor]{"entity": "TeacherMaterialKeys","role":"Teacher", "group": "TeacherMaterial"} de [Algebra]{"entity": "subject", "group": "TeacherMaterial"} de [noite](TeacherShift)
+    - Quem [dá aula]{"entity": "TeacherMaterialKeys","role":"Teacher", "group": "TeacherMaterial"} de [Algebra]{"entity": "subject", "group": "TeacherMaterial"} de [noite](TeacherShift)
+    - Quem são os [professores]{"entity": "TeacherMaterialKeys","role":"Teacher", "group": "TeacherMaterial"} de [biologia animal]{"entity": "subject", "group": "TeacherMaterial"} de [noite](TeacherShift)
   
