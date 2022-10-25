@@ -12,6 +12,7 @@ intents:
 - give_time
 - goodbye
 - greet
+- thanks
 - inform_name
 - listActivities
 - mockTestsHOW
@@ -20,6 +21,7 @@ intents:
 - recruitmentProcessHOW
 - recruitmentProcessWHEN
 - reinforcementClassesHOW
+- askingForTeacherMaterial
 entities:
 - name
 - prep_course

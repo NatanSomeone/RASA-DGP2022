@@ -20,7 +20,7 @@ nlu:
     - boa tarde
     - boa noite
     - eai
-    - bão
+    - bão ?
     - Eai , salve
 - intent: goodbye
   examples: |
