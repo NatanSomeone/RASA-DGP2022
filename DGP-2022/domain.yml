@@ -31,24 +31,15 @@ intents:
 entities:
   - name
   - prep_course
-  - TeacherShift:
-      groups:
-      - TeacherMaterial
-  - subject:
-      groups:
-      - TeacherMaterial
-      roles:
-      - TeacherMatKey
-  - Teacher:
-      groups:
-      - TeacherMaterial
-      roles:
-      - TeacherMatKey
+  - period
+  - subject
+  - Teacher
+  
 slots:
   name:
     type: text
     influence_conversation: true
-  TeacherShift:
+  period:
     type: text
     influence_conversation: true
   subject:

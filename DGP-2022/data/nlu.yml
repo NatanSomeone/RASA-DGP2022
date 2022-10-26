@@ -159,14 +159,14 @@ nlu:
 
 - intent: askingForTeacherName
   examples: |
-    - Quais [professores]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} dão aula de [manhã]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
-    - Que [professores]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} dão aula de [noite]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
-    - Quem [] {"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} dá aula de [reforço]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
-    - Quem é o [lindo] {"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} que dá aula de [reforço]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
-    - O [thiago] {"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} dá aula de [reforço]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
+    - Quais [professores](Teacher) dão aula de [manhã](period) ? 
+    - Que [professores](Teacher) dão aula de [noite](period) ? 
+    - Quem [] (Teacher) dá aula de [reforço](period) ? 
+    - Quem é o [lindo] (Teacher) que dá aula de [reforço](period) ? 
+    - O [thiago] (Teacher) dá aula de [reforço](period) ? 
 
 - intent: askingForSubjects
   examples: |
-    - Quais [matérias]{"entity": "subject","role":"TeacherMatKey", "group": "TeacherMaterial"} são dadas de [manhã]{"entity":"TeacherShift","group":"TeacherMaterial"} ?
-    - Quais [matérias]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} são dadas a [noite]{"entity":"TeacherShift","group":"TeacherMaterial"} ?
-    - Quais [matérias]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} são dadas no [reforço]{"entity":"TeacherShift","group":"TeacherMaterial"} ?
+    - Quais [matérias](subject) são dadas de [manhã](period) ?
+    - Quais [matérias]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} são dadas a [noite](period) ?
+    - Quais [matérias]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} são dadas no [reforço](period) ?
