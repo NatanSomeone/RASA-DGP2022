@@ -167,6 +167,6 @@ nlu:
 
 - intent: askingForSubjects
   examples: |
-    - Quais [matérias]{"entity": "XXXX","role":"TeacherMatKey", "group": "TeacherMaterial"} são dadas de [manhã]{"entity":"TeacherShift","group":"TeacherMaterial"} ?
+    - Quais [matérias]{"entity": "subject","role":"TeacherMatKey", "group": "TeacherMaterial"} são dadas de [manhã]{"entity":"TeacherShift","group":"TeacherMaterial"} ?
     - Quais [matérias]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} são dadas a [noite]{"entity":"TeacherShift","group":"TeacherMaterial"} ?
     - Quais [matérias]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} são dadas no [reforço]{"entity":"TeacherShift","group":"TeacherMaterial"} ?

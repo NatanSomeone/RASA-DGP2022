@@ -37,6 +37,8 @@ entities:
   - subject:
       groups:
       - TeacherMaterial
+      roles:
+      - TeacherMatKey
   - Teacher:
       groups:
       - TeacherMaterial
