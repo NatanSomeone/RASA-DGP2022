@@ -32,9 +32,11 @@ entities:
   - name
   - prep_course
   - period
+  - subjectKey
   - subject
+  - TeacherKey
   - Teacher
-  
+    
 slots:
   name:
     type: text
@@ -46,6 +48,9 @@ slots:
     type: text
     influence_conversation: true
   Teacher:
+    type: text
+    influence_conversation: true
+  TeacherKey:
     type: text
     influence_conversation: true
 responses:

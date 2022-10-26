@@ -8,11 +8,18 @@ nlu:
     - cursinho
     - gera bixo
 
-- synonym: subject
+- synonym: subjectKey
   examples: |
     - Matérias
     - Matéria
     - Diciplina
+
+- lookup: period
+  examples: |
+    - manhã
+    - tarde
+    - noite
+    - reforço
 
 - intent: greet
   examples: |
@@ -159,14 +166,18 @@ nlu:
 
 - intent: askingForTeacherName
   examples: |
-    - Quais [professores](Teacher) dão aula de [manhã](period) ? 
-    - Que [professores](Teacher) dão aula de [noite](period) ? 
-    - Quem [] (Teacher) dá aula de [reforço](period) ? 
-    - Quem é o [lindo] (Teacher) que dá aula de [reforço](period) ? 
-    - O [thiago] (Teacher) dá aula de [reforço](period) ? 
+    - Quais [professores](TeacherKey) dão aula de [manhã](period) ? 
+    - Que [professores](TeacherKey) dão aula de [noite](period) ? 
+    - Quem [] (TeacherKey) dá aula de [reforço](period) ? 
+    - Quem é o [lindo] (TeacherKey) que dá aula de [reforço](period) ? 
+    - O [thiago] (TeacherKey) dá aula de [reforço](period) ? 
+    - O [Carlos] (TeacherKey) dá aula de [matematica](subject) de [reforço](period) ? 
+    - A [marina] (TeacherKey) dá aula de [reforço](period) ? 
+    - A [marina] (TeacherKey) dá aula de [reforço](period) ? 
 
 - intent: askingForSubjects
   examples: |
-    - Quais [matérias](subject) são dadas de [manhã](period) ?
-    - Quais [matérias](subject) são dadas a [noite](period) ?
-    - Quais [matérias](subject) são dadas no [reforço](period) ?
+    - Quais [matérias](subjectKey) são dadas de [manhã](period) ?
+    - Quais [matérias](subjectKey) são dadas a [noite](period) ?
+    - Quais [matérias](subjectKey) são dadas no [reforço](period) ?
+    - oque é [](subjectKey) dado no [reforço](period) ?
