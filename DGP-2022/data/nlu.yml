@@ -8,6 +8,12 @@ nlu:
     - cursinho
     - gera bixo
 
+- synonym: subject
+  examples: |
+    - Matérias
+    - Matéria
+    - Diciplina
+
 - intent: greet
   examples: |
     - hey
@@ -155,4 +161,12 @@ nlu:
   examples: |
     - Quais [professores]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} dão aula de [manhã]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
     - Que [professores]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} dão aula de [noite]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
-    - [Quem] {"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} dá aula de [reforço]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
+    - Quem [] {"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} dá aula de [reforço]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
+    - Quem é o [lindo] {"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} que dá aula de [reforço]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
+    - O [thiago] {"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} dá aula de [reforço]{"entity":"TeacherShift","group":"TeacherMaterial"} ? 
+
+- intent: askingForSubjects
+  examples: |
+    - Quais [matérias]{"entity": "XXXX","role":"TeacherMatKey", "group": "TeacherMaterial"} são dadas de [manhã]{"entity":"TeacherShift","group":"TeacherMaterial"} ?
+    - Quais [matérias]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} são dadas a [noite]{"entity":"TeacherShift","group":"TeacherMaterial"} ?
+    - Quais [matérias]{"entity": "Teacher","role":"TeacherMatKey", "group": "TeacherMaterial"} são dadas no [reforço]{"entity":"TeacherShift","group":"TeacherMaterial"} ?
