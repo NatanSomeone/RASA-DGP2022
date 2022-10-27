@@ -8,6 +8,26 @@ nlu:
     - cursinho
     - gera bixo
 
+- synonym: weekClass
+  examples: |
+    - Semana A
+    - Semana B
+    - A
+    - B
+
+- synonym: weekday
+  examples: |
+    - segunda
+    - terça
+    - quarta
+    - quinta
+    - sexta
+    - segunda-feira
+    - terça-feira
+    - quarta-feira
+    - quinta-feira
+    - sexta-feira
+
 - synonym: name
   examples: |
     - Carlos
@@ -264,4 +284,12 @@ nlu:
     - Preciso do material de (biologia)[subject]
     - qual o material de (algebra)[subject]?
     - Teriam materias de (história)[subject]?
-    
+
+- intent: askingAbtClassesHours
+  examples: |
+    - Quais são as aulas do dia [XX](weekday) ? 
+    - Tem aula de quê [XX](weekday) ? 
+    - nas [XX](weekday) tem aula? 
+    - tem aula aos [XX](weekday)? 
+    - Quais são as aulas do dia [XX](weekday) , no perído (YY)[period]? 
+    - Quais são as aulas do dia [XX](weekday) , no perído (YY)[period], durante a semana [ZZ](weekClass)? 

@@ -33,6 +33,7 @@ intents:
   - askingForMaterials
   - about_transport
   - classes_type
+  - askingAbtClassesHours
 
 entities:
   - name
@@ -43,6 +44,8 @@ entities:
   - TeacherKey
   - Teacher
   - comission
+  - weekday
+  - weekClass
     
 slots:
   name:
@@ -125,5 +128,9 @@ responses:
   - text: As aulas são exclusivamente presenciais.
   - text: Tanto no período da manhã quanto no perído da noite as aulas são presenciais.
   - text: Tanto de quanto a noite as aulas são presenciais.
+  utter_askingAbtClassesHours:
+  - text: De tal hora até tal hora, tem tal aula, isso na semana tal, para o periodo tal.
+  - text: De xx:xx até yy:yy, temos aula de WWWWWW.
+  - text: Na semana JJ , a noite das xx:xx às yy:yy, ha aula de WWWWWW.
    
  
