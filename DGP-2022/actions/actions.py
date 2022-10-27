@@ -63,3 +63,31 @@ class ActionGetName(Action):
         dispatcher.utter_message(response = "utter_greet_by_name", name = name)
 
         return []
+
+class ActionGetName(Action):
+
+    def name(self) -> Text:
+        return "action_get_ClassesHours"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        name =  tracker.get_slot('name');
+        dispatcher.utter_message(response = "utter_greet_by_name", name = name)
+
+        return []
+
+class ActionGetName(Action):
+
+    def name(self) -> Text:
+        return "action_get_TeacherMaterial"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        name =  tracker.get_slot('name');
+        dispatcher.utter_message(response = "utter_greet_by_name", name = name)
+
+        return []

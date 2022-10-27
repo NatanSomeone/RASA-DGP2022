@@ -5,9 +5,9 @@ session_config:
 actions:
   - action_get_name
   - action_show_time
-  - utter_aboutTheCourse
-  - utter_cheer_up
-  - utter_greet
+  - action_get_ClassesHours
+  - action_get_TeacherMaterial
+
 intents:
   - aboutTheCourse
   - aboutTheCouseStructure
