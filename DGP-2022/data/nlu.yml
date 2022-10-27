@@ -199,10 +199,10 @@ nlu:
     - A  [comissão dos professores](comission) é formada por quem?
     - quem é da [comissão de marketing](comission) ?
     - quem é do [marketing](comission)?
+    - quem é o responsável pela [marketing](comission)?
 
-- intent: askingForComissionMembers
+- intent: askingForMaterials
   examples: |
-    - Quem faz parte da [diretoria](comission)?
-    - A  [comissão dos professores](comission) é formada por quem?
-    - quem é da [comissão de marketing](comission) ?
-    - quem é do [marketing](comission)?
+    - Preciso do material de (biologia)[subject]
+    - qual o material de (algebra)[subject]?
+    
