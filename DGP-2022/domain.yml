@@ -32,7 +32,7 @@ intents:
   - askingForComissionMembers
   - askingForMaterials
 entities:
-  - PERSON
+  - name
   - prep_course
   - period
   - subjectKey
@@ -42,7 +42,7 @@ entities:
   - comission
     
 slots:
-  PERSON:
+  name:
     type: text
     influence_conversation: true
   period:
