@@ -25,6 +25,31 @@ nlu:
     - marilza
     - claudio
     - felipe
+- synonym: subject
+  examples: |
+    - Álgebra
+    - Biologia Animal
+    - Biologia Botânica
+    - Biologia Celular
+    - Filosofia
+    - Física Elétrica
+    - Física Mecânica
+    - Física Ótica
+    - Físico-Química
+    - Geografia do Brasil
+    - Geografia Geral
+    - Geometria
+    - Gramática
+    - História do Brasil
+    - História Geral
+    - Inglês Avançado
+    - Inglês Básico
+    - Redação
+    - Literatura
+    - Matemática Fundamental
+    - Química Geral
+    - Química Orgânica
+    - Sociologia
 
 - synonym: subjectKey
   examples: |
@@ -141,7 +166,7 @@ nlu:
     - As aulas são on-line?
     - As aulas são presenciais?
     - tem aulas remotas?
-    
+
 - intent: inform_name
   examples: |
     - sou [anna](name)
