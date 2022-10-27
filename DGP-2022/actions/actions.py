@@ -28,6 +28,10 @@
 import requests
 import datetime as dt 
 from typing import Any, Text, Dict, List
+import os
+
+from oauth2client.service_account import ServiceAccountCredentials
+from googleapiclient.discovery import build
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher

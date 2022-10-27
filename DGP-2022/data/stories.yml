@@ -69,6 +69,7 @@ stories:
   - action: action_get_name
   - intent: greet
   - action: utter_greet_by_name
+  
 - story: interactive_story_1
   steps:
   - intent: greet
@@ -91,5 +92,12 @@ stories:
   steps:
   - intent: classes_hours
     entities:
-    - weekday: segunda
+    - weekday: terça-feira
+  - action: action_get_ClassesHours
+
+- story: interactive_story_2
+  steps:
+  - intent: classes_hours
+    entities:
+    - weekday: sexta-feira
   - action: action_get_ClassesHours

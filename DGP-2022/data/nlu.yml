@@ -153,6 +153,7 @@ nlu:
     - como é a estrutura do [geraBixo](prep_course) ?
 - intent: askingForTeacherName
   examples: |
+    - Quem são os  [professores](TeacherKey) do [gera](prep_course) ?
     - Quais [professores](TeacherKey) dão aula de [manhã](period) ?
     - Que [professores](TeacherKey) dão aula de [noite](period) ?
     - Quem [] (TeacherKey) dá aula de [reforço](period) ?
