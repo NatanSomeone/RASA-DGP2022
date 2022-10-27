@@ -38,8 +38,6 @@ stories:
 
 - story: path informing name
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: inform_name
     entities:
     - name: anna
