@@ -31,6 +31,9 @@ intents:
   - askingForSubjects
   - askingForComissionMembers
   - askingForMaterials
+  - about_transport
+  - classes_type
+
 entities:
   - name
   - prep_course
@@ -116,3 +119,11 @@ responses:
   - text: o {Teacher} dá aula no periodo da {TeacherShift}.
   - text: o {Teacher} dá aula de {subject}.
   - text: o {Teacher} dá aula de {subject} no periodo da {TeacherShift}.
+  utter_about_transport:
+  - text: o Gera consegue auxílio nas passagens de ônibus, para mais informações entre em contato com alguém da Comissão de Alunos.
+  utter_classes_type:
+  - text: As aulas são exclusivamente presenciais.
+  - text: Tanto no período da manhã quanto no perído da noite as aulas são presenciais.
+  - text: Tanto de quanto a noite as aulas são presenciais.
+   
+ 

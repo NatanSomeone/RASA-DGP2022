@@ -8,6 +8,24 @@ nlu:
     - cursinho
     - gera bixo
 
+- synonym: name
+  examples: |
+    - Carlos
+    - Pedro
+    - Paulo
+    - Lucas
+    - Luana
+    - Maria
+    - antonio
+    - Andressa
+    - andersson
+    - julia
+    - Adão
+    - cidmario
+    - marilza
+    - claudio
+    - felipe
+
 - synonym: subjectKey
   examples: |
     - Matérias
@@ -24,7 +42,7 @@ nlu:
     - Comissão de Simulados
     - Comissão de Dados
 
-- lookup: period
+- synonym: period
   examples: |
     - manhã
     - tarde
@@ -104,22 +122,38 @@ nlu:
     - desapontado
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - Isso é um robô ? 
+    - Voce é humano?
+    - Estou falando com um robo ?
+    - Estou falando com um humano ?
+
 - intent: give_time
   examples: |
     - time
     - horas
     - tem horas
-    - sabe que horas são
+    - sabe que horas são ?
+
+- intent: classes_type
+  examples: |
+    - As aulas são presenciais ou remotas?
+    - As aulas são remotas?
+    - As aulas são on-line?
+    - As aulas são presenciais?
+    - tem aulas remotas?
+    
 - intent: inform_name
   examples: |
     - sou [anna](name)
     - me chamo [johnnatan](name)
     - meu nome é [carlos](name)
     - Me chame de [carlito](name)
+- intent: about_transport
+  examples: |
+    - O [gera](prep_course) auxilia com transporte ?
+    - Onibus para o [gera](prep_course) ?
+    - é possivel ajuda com as passagens ?
+
 - intent: classes_hours
   examples: |
     - Como funcionam as aulas ?
@@ -195,12 +229,14 @@ nlu:
   examples: |
     - Quem faz parte da [diretoria](comission)?
     - A  [comissão dos professores](comission) é formada por quem?
-    - quem é da [comissão de marketing](comission) ?
-    - quem é do [marketing](comission)?
-    - quem é o responsável pela [marketing](comission)?
+    - quem é da [comissão do financeiro](comission) ?
+    - quem é do [financeira](comission)?
+    - quem é o responsável pela [financeira](comission)?
+    - quem é da [comissão de alunos](comission)?
 
 - intent: askingForMaterials
   examples: |
     - Preciso do material de (biologia)[subject]
     - qual o material de (algebra)[subject]?
+    - Teriam materias de (história)[subject]?
     

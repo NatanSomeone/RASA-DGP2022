@@ -46,7 +46,7 @@ class ActionHelloWorld(Action):
         json_data = requests. get(url) .json();
         __TIME = dt.datetime.fromtimestamp(json_data["unixtime"]).strftime("%a, %d %b %Y %H:%M:%S");
         # __TIME = dt.now().strftime("%a, %d %b %Y %H:%M:%S");
-        dispatcher.utter_message(text=f"o tempo é {__TIME}")
+        dispatcher.utter_message(text=f"A data é {__TIME}")
 
         return []
         
