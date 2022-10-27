@@ -116,14 +116,13 @@ nlu:
     - sabe que horas são
 - intent: inform_name
   examples: |
-    - sou [anna](name)
-    - me chamo [johnnatan](name)
-    - meu nome é [carlos](name)
-    - Me chame de Carlito
-    - Me chame de carlito
-    - Me chame de [carlito](name)
+    - sou [anna](PERSON)
+    - me chamo [johnnatan](PERSON)
+    - meu nome é [carlos](PERSON)
+    - Me chame de [carlito](PERSON)
 - intent: classes_hours
   examples: |
+    - como funciona o [GeraBixo](prep_course) ?
     - Quais são os horários de aula do [GeraBixo](prep_course) ?
     - Quando tem aula no [Gera](prep_course)?
     - De quando são as aulas do [gera](prep_course)?
@@ -146,9 +145,9 @@ nlu:
   examples: |
     - Como funcionam as aulas de reforço ?
     - o que seriam as aulas de reforço?
+    - o que tem nas aulas de reforço?
 - intent: listActivities
   examples: |
-    - Como funcionam as aulas ?
     - Quais atividades o [GeraBixo](prep_course) realiza ?
     - o que que o [gera](prep_course) faz?
     - o que tem no [gera](prep_course) ?
@@ -181,10 +180,10 @@ nlu:
     - Que [professores](TeacherKey) dão aula de [noite](period) ? 
     - Quem [] (TeacherKey) dá aula de [reforço](period) ? 
     - Quem é o [lindo] (TeacherKey) que dá aula de [reforço](period) ? 
-    - O [thiago] (TeacherKey) dá aula de [reforço](period) ? 
-    - O [Carlos] (TeacherKey) dá aula de [matematica](subject) de [reforço](period) ? 
-    - A [marina] (TeacherKey) dá aula de [reforço](period) ? 
-    - A [marina] (TeacherKey) dá aula de [reforço](period) ? 
+    - O [thiago] (PERSON) dá aula de [reforço](period) ? 
+    - O [Carlos] (PERSON) dá aula de [matematica](subject) de [reforço](period) ? 
+    - A [marina] (PERSON) dá aula de [reforço](period) ? 
+    - A [marina] (PERSON) dá aula de [reforço](period) ? 
 
 - intent: askingForSubjects
   examples: |

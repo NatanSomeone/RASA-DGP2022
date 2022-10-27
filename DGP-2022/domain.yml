@@ -29,7 +29,7 @@ intents:
   - reinforcementClassesHOW
   - askingForTeacherName
 entities:
-  - name
+  - PERSON
   - prep_course
   - period
   - subjectKey
@@ -39,7 +39,7 @@ entities:
   - comission
     
 slots:
-  name:
+  PERSON:
     type: text
     influence_conversation: true
   period:
@@ -67,10 +67,10 @@ responses:
   - text: 'Faaala aí bixo, bora pra um rolê ? '
   - text: 'Eai mano, vai encarar? '
   utter_greet_by_name:
-  - text: 'Oi {name}, tudo bom ? '
-  - text: 'Oi {name}, é um prazer '
-  - text: 'Saudações {name}, bem vindo ao ChatBot do Gera '
-  - text: 'Fala {name}, blz ? '
+  - text: 'Oi {PERSON}, tudo bom ? '
+  - text: 'Oi {PERSON}, é um prazer '
+  - text: 'Saudações {PERSON}, bem vindo ao ChatBot do Gera '
+  - text: 'Fala {PERSON}, blz ? '
   utter_cheer_up:
   - text: Aqui algo que pode te animar
     image: https://i.imgur.com/nGF1K8f.jpg
