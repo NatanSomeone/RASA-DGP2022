@@ -14,6 +14,16 @@ nlu:
     - Matéria
     - Diciplina
 
+- synonym: comission
+  examples: |
+    - Comissão de Professores
+    - Diretoria
+    - Comissão de Alunos
+    - Comissão de Atividades Extras
+    - Comissão do Financeiro
+    - Comissão de Simulados
+    - Comissão de Dados
+
 - lookup: period
   examples: |
     - manhã
@@ -138,6 +148,7 @@ nlu:
     - o que seriam as aulas de reforço?
 - intent: listActivities
   examples: |
+    - Como funcionam as aulas ?
     - Quais atividades o [GeraBixo](prep_course) realiza ?
     - o que que o [gera](prep_course) faz?
     - o que tem no [gera](prep_course) ?
@@ -181,3 +192,17 @@ nlu:
     - Quais [matérias](subjectKey) são dadas a [noite](period) ?
     - Quais [matérias](subjectKey) são dadas no [reforço](period) ?
     - oque é [](subjectKey) dado no [reforço](period) ?
+
+- intent: askingForComissionMembers
+  examples: |
+    - Quem faz parte da [diretoria](comission)?
+    - A  [comissão dos professores](comission) é formada por quem?
+    - quem é da [comissão de marketing](comission) ?
+    - quem é do [marketing](comission)?
+
+- intent: askingForComissionMembers
+  examples: |
+    - Quem faz parte da [diretoria](comission)?
+    - A  [comissão dos professores](comission) é formada por quem?
+    - quem é da [comissão de marketing](comission) ?
+    - quem é do [marketing](comission)?

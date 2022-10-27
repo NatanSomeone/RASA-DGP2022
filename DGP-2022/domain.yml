@@ -36,6 +36,7 @@ entities:
   - subject
   - TeacherKey
   - Teacher
+  - comission
     
 slots:
   name:
@@ -47,10 +48,16 @@ slots:
   subject:
     type: text
     influence_conversation: true
+  subjectKey:
+    type: text
+    influence_conversation: true
   Teacher:
     type: text
     influence_conversation: true
   TeacherKey:
+    type: text
+    influence_conversation: true
+  comission:
     type: text
     influence_conversation: true
 responses:
