@@ -28,6 +28,9 @@ intents:
   - recruitmentProcessWHEN
   - reinforcementClassesHOW
   - askingForTeacherName
+  - askingForSubjects
+  - askingForComissionMembers
+  - askingForMaterials
 entities:
   - name
   - prep_course

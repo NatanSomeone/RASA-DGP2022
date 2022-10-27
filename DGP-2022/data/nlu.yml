@@ -124,6 +124,7 @@ nlu:
     - Me chame de [carlito](name)
 - intent: classes_hours
   examples: |
+    - Como funcionam as aulas ?
     - Quais são os horários de aula do [GeraBixo](prep_course) ?
     - Quando tem aula no [Gera](prep_course)?
     - De quando são as aulas do [gera](prep_course)?
@@ -148,7 +149,6 @@ nlu:
     - o que seriam as aulas de reforço?
 - intent: listActivities
   examples: |
-    - Como funcionam as aulas ?
     - Quais atividades o [GeraBixo](prep_course) realiza ?
     - o que que o [gera](prep_course) faz?
     - o que tem no [gera](prep_course) ?
