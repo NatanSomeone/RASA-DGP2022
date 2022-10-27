@@ -2,51 +2,43 @@ version: '2.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-actions:
-  - action_get_name
-  - action_show_time
-  - action_get_ClassesHours
-  - action_get_TeacherMaterial
-
 intents:
-  - aboutTheCourse
-  - aboutTheCouseStructure
-  - affirm
-  - bot_challenge
-  - classes_hours
-  - deny
-  - give_time
-  - goodbye
-  - greet
-  - thanks
-  - inform_name
-  - listActivities
-  - mockTestsHOW
-  - mood_great
-  - mood_unhappy
-  - recruitmentProcessHOW
-  - recruitmentProcessWHEN
-  - reinforcementClassesHOW
-  - askingForTeacherName
-  - askingForSubjects
-  - askingForComissionMembers
-  - askingForMaterials
-  - about_transport
-  - classes_type
-  - askingAbtClassesHours
-
+- aboutTheCourse
+- aboutTheCouseStructure
+- about_transport
+- affirm
+- askingAbtClassesHours
+- askingForComissionMembers
+- askingForMaterials
+- askingForSubjects
+- askingForTeacherName
+- bot_challenge
+- classes_hours
+- classes_type
+- deny
+- give_time
+- goodbye
+- greet
+- inform_name
+- listActivities
+- mockTestsHOW
+- mood_great
+- mood_unhappy
+- recruitmentProcessHOW
+- recruitmentProcessWHEN
+- reinforcementClassesHOW
+- thanks
 entities:
-  - name
-  - prep_course
-  - period
-  - subjectKey
-  - subject
-  - TeacherKey
-  - Teacher
-  - comission
-  - weekday
-  - weekClass
-    
+- weekday
+- name
+- prep_course
+- period
+- subjectKey
+- subject
+- TeacherKey
+- Teacher
+- comission
+- weekClass
 slots:
   name:
     type: text
@@ -132,5 +124,9 @@ responses:
   - text: De tal hora até tal hora, tem tal aula, isso na semana tal, para o periodo tal.
   - text: De xx:xx até yy:yy, temos aula de WWWWWW.
   - text: Na semana JJ , a noite das xx:xx às yy:yy, ha aula de WWWWWW.
-   
- 
+actions:
+- action_get_ClassesHours
+- action_get_TeacherMaterial
+- action_get_name
+- action_show_time
+- utter_greet

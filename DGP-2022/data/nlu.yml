@@ -1,99 +1,5 @@
 version: "2.0"
 nlu:
-
-- synonym: prep_course
-  examples: |
-    - gera
-    - geraBixo
-    - cursinho
-    - gera bixo
-
-- synonym: weekClass
-  examples: |
-    - Semana A
-    - Semana B
-    - A
-    - B
-
-- synonym: weekday
-  examples: |
-    - segunda
-    - terça
-    - quarta
-    - quinta
-    - sexta
-    - segunda-feira
-    - terça-feira
-    - quarta-feira
-    - quinta-feira
-    - sexta-feira
-
-- synonym: name
-  examples: |
-    - Carlos
-    - Pedro
-    - Paulo
-    - Lucas
-    - Luana
-    - Maria
-    - antonio
-    - Andressa
-    - andersson
-    - julia
-    - Adão
-    - cidmario
-    - marilza
-    - claudio
-    - felipe
-- synonym: subject
-  examples: |
-    - Álgebra
-    - Biologia Animal
-    - Biologia Botânica
-    - Biologia Celular
-    - Filosofia
-    - Física Elétrica
-    - Física Mecânica
-    - Física Ótica
-    - Físico-Química
-    - Geografia do Brasil
-    - Geografia Geral
-    - Geometria
-    - Gramática
-    - História do Brasil
-    - História Geral
-    - Inglês Avançado
-    - Inglês Básico
-    - Redação
-    - Literatura
-    - Matemática Fundamental
-    - Química Geral
-    - Química Orgânica
-    - Sociologia
-
-- synonym: subjectKey
-  examples: |
-    - Matérias
-    - Matéria
-    - Diciplina
-
-- synonym: comission
-  examples: |
-    - Comissão de Professores
-    - Diretoria
-    - Comissão de Alunos
-    - Comissão de Atividades Extras
-    - Comissão do Financeiro
-    - Comissão de Simulados
-    - Comissão de Dados
-
-- synonym: period
-  examples: |
-    - manhã
-    - tarde
-    - noite
-    - reforço
-
 - intent: greet
   examples: |
     - hey
@@ -108,6 +14,7 @@ nlu:
     - eai
     - bão ?
     - Eai , salve
+    - Oi
 - intent: goodbye
   examples: |
     - bye
@@ -167,18 +74,16 @@ nlu:
     - desapontado
 - intent: bot_challenge
   examples: |
-    - Isso é um robô ? 
+    - Isso é um robô ?
     - Voce é humano?
     - Estou falando com um robo ?
     - Estou falando com um humano ?
-
 - intent: give_time
   examples: |
     - time
     - horas
     - tem horas
     - sabe que horas são ?
-
 - intent: classes_type
   examples: |
     - As aulas são presenciais ou remotas?
@@ -186,25 +91,26 @@ nlu:
     - As aulas são on-line?
     - As aulas são presenciais?
     - tem aulas remotas?
-
 - intent: inform_name
   examples: |
     - sou [anna](name)
     - me chamo [johnnatan](name)
     - meu nome é [carlos](name)
     - Me chame de [carlito](name)
+    - Meu nome  é [Mayra](name)
 - intent: about_transport
   examples: |
     - O [gera](prep_course) auxilia com transporte ?
     - Onibus para o [gera](prep_course) ?
     - é possivel ajuda com as passagens ?
-
 - intent: classes_hours
   examples: |
     - Como funcionam as aulas ?
     - Quais são os horários de aula do [GeraBixo](prep_course) ?
     - Quando tem aula no [Gera](prep_course)?
     - De quando são as aulas do [gera](prep_course)?
+    - quais são as aulas de [segunda](weekday) ?
+    - quais são as aulas de [segunda](weekday)?
 - intent: recruitmentProcessHOW
   examples: |
     - como é o ps do [gera](prep_course)?
@@ -242,34 +148,24 @@ nlu:
 - intent: aboutTheCouseStructure
   examples: |
     - Qual a estrutura da administração do [cursinho](prep_course) ?
-    - como é a divisão do [cursinho](prep_course) ? 
-    - como é a estrutura do [gera](prep_course) ? 
-    - como é a estrutura do [geraBixo](prep_course) ? 
-# Retornar professores -have slot [teacher]
-# | por turno - + [teacheshift]
-# | por diciplina - + [subject]
-# | por diciplina e turno - + [subject] & [teachershift]
-# | por categoria de diciplina - + [subjectCat] 
-# | por categoria de diciplina e turno - + [subjectcat] & [teachershift]
-
+    - como é a divisão do [cursinho](prep_course) ?
+    - como é a estrutura do [gera](prep_course) ?
+    - como é a estrutura do [geraBixo](prep_course) ?
 - intent: askingForTeacherName
   examples: |
-    - Quais [professores](TeacherKey) dão aula de [manhã](period) ? 
-    - Que [professores](TeacherKey) dão aula de [noite](period) ? 
-    - Quem [] (TeacherKey) dá aula de [reforço](period) ? 
-    - Quem é o [lindo] (TeacherKey) que dá aula de [reforço](period) ? 
-    - O [thiago] (TeacherKey) dá aula de [reforço](period) ? 
-    - O [Carlos] (TeacherKey) dá aula de [matematica](subject) de [reforço](period) ? 
-    - A [marina] (TeacherKey) dá aula de [reforço](period) ? 
-    - A [marina] (TeacherKey) dá aula de [reforço](period) ? 
-
+    - Quais [professores](TeacherKey) dão aula de [manhã](period) ?
+    - Que [professores](TeacherKey) dão aula de [noite](period) ?
+    - Quem [] (TeacherKey) dá aula de [reforço](period) ?
+    - Quem é o [lindo] (TeacherKey) que dá aula de [reforço](period) ?
+    - O [thiago] (TeacherKey) dá aula de [reforço](period) ?
+    - O [Carlos] (TeacherKey) dá aula de [matematica](subject) de [reforço](period) ?
+    - A [marina] (TeacherKey) dá aula de [reforço](period) ?
 - intent: askingForSubjects
   examples: |
     - Quais [matérias](subjectKey) são dadas de [manhã](period) ?
     - Quais [matérias](subjectKey) são dadas a [noite](period) ?
     - Quais [matérias](subjectKey) são dadas no [reforço](period) ?
     - oque é [](subjectKey) dado no [reforço](period) ?
-
 - intent: askingForComissionMembers
   examples: |
     - Quem faz parte da [diretoria](comission)?
@@ -278,18 +174,102 @@ nlu:
     - quem é do [financeira](comission)?
     - quem é o responsável pela [financeira](comission)?
     - quem é da [comissão de alunos](comission)?
-
 - intent: askingForMaterials
   examples: |
     - Preciso do material de (biologia)[subject]
     - qual o material de (algebra)[subject]?
     - Teriam materias de (história)[subject]?
-
 - intent: askingAbtClassesHours
   examples: |
-    - Quais são as aulas do dia [XX](weekday) ? 
-    - Tem aula de quê [XX](weekday) ? 
-    - nas [XX](weekday) tem aula? 
-    - tem aula aos [XX](weekday)? 
-    - Quais são as aulas do dia [XX](weekday) , no perído (YY)[period]? 
-    - Quais são as aulas do dia [XX](weekday) , no perído (YY)[period], durante a semana [ZZ](weekClass)? 
+    - Quais são as aulas do dia [XX](weekday) ?
+    - Tem aula de quê [XX](weekday) ?
+    - nas [XX](weekday) tem aula?
+    - tem aula aos [XX](weekday)?
+    - Quais são as aulas do dia [XX](weekday) , no perído (YY)[period]?
+    - Quais são as aulas do dia [XX](weekday) , no perído (YY)[period], durante a semana [ZZ](weekClass)?
+- synonym: prep_course
+  examples: |
+    - gera
+    - geraBixo
+    - cursinho
+    - gera bixo
+- synonym: weekClass
+  examples: |
+    - Semana A
+    - Semana B
+    - A
+    - B
+- synonym: weekday
+  examples: |
+    - segunda
+    - terça
+    - quarta
+    - quinta
+    - sexta
+    - segunda-feira
+    - terça-feira
+    - quarta-feira
+    - quinta-feira
+    - sexta-feira
+- synonym: name
+  examples: |
+    - Carlos
+    - Pedro
+    - Paulo
+    - Lucas
+    - Luana
+    - Maria
+    - antonio
+    - Andressa
+    - andersson
+    - julia
+    - Adão
+    - cidmario
+    - marilza
+    - claudio
+    - felipe
+- synonym: subject
+  examples: |
+    - Álgebra
+    - Biologia Animal
+    - Biologia Botânica
+    - Biologia Celular
+    - Filosofia
+    - Física Elétrica
+    - Física Mecânica
+    - Física Ótica
+    - Físico-Química
+    - Geografia do Brasil
+    - Geografia Geral
+    - Geometria
+    - Gramática
+    - História do Brasil
+    - História Geral
+    - Inglês Avançado
+    - Inglês Básico
+    - Redação
+    - Literatura
+    - Matemática Fundamental
+    - Química Geral
+    - Química Orgânica
+    - Sociologia
+- synonym: subjectKey
+  examples: |
+    - Matérias
+    - Matéria
+    - Diciplina
+- synonym: comission
+  examples: |
+    - Comissão de Professores
+    - Diretoria
+    - Comissão de Alunos
+    - Comissão de Atividades Extras
+    - Comissão do Financeiro
+    - Comissão de Simulados
+    - Comissão de Dados
+- synonym: period
+  examples: |
+    - manhã
+    - tarde
+    - noite
+    - reforço

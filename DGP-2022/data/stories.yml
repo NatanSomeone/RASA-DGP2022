@@ -69,3 +69,27 @@ stories:
   - action: action_get_name
   - intent: greet
   - action: utter_greet_by_name
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: inform_name
+    entities:
+    - name: Mayra
+  - slot_was_set:
+    - name: Mayra
+  - action: action_get_name
+
+- story: interactive_story_1
+  steps:
+  - intent: classes_hours
+    entities:
+    - weekday: segunda
+  - action: action_get_ClassesHours
+
+- story: interactive_story_2
+  steps:
+  - intent: classes_hours
+    entities:
+    - weekday: segunda
+  - action: action_get_ClassesHours
