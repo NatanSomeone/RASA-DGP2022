@@ -116,12 +116,10 @@ nlu:
     - sabe que horas são
 - intent: inform_name
   examples: |
-    - sou [anna](name)
-    - me chamo [johnnatan](name)
-    - meu nome é [carlos](name)
-    - Me chame de Carlito
-    - Me chame de carlito
-    - Me chame de [carlito](name)
+    - sou [anna](PERSON)
+    - me chamo [johnnatan](PERSON)
+    - meu nome é [carlos](PERSON)
+    - Me chame de [carlito](PERSON)
 - intent: classes_hours
   examples: |
     - Como funcionam as aulas ?
