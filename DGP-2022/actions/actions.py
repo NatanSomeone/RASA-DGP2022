@@ -25,6 +25,7 @@
 #         dispatcher.utter_message(text="Hello World!")
 #
 #         return []
+import random
 import requests
 import datetime as dt 
 from typing import Any, Text, Dict, List
@@ -36,6 +37,10 @@ from googleapiclient.discovery import build
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
+SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+Tmaterials_SPREADSHEET_ID = '1rCMJJ2I4wrEYK7kRNI8LNRJrChu-92tc2h0B8YQgNHk'
+classesHours_SPREADSHEET_ID = '1uNnriEN44iDqDMRunvhAcTXs5wqujoUtz4TJnDRxs1Y'
+sheet = service.spreadsheets()
 
 class ActionHelloWorld(Action):
 
@@ -76,6 +81,8 @@ class ActionGetName(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        result = sheet.values().get(spreadsheetId=classesHours_SPREADSHEET_ID,range="A1").execute()
+        values = result.get('values', [])
 
         name =  tracker.get_slot('name');
         dispatcher.utter_message(response = "utter_askingAbtClassesHours", name = name)
@@ -91,7 +98,11 @@ class ActionGetName(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        name =  tracker.get_slot('name');
-        dispatcher.utter_message(response = "utter_greet_by_name", name = name)
+        result = sheet.values().get(spreadsheetId=Tmaterials_SPREADSHEET_ID,range="A:A").execute()
+        values = result.get('values', [])
+        val=random.choice(list(set(values)))
+
+        # name =  tracker.get_slot('Teacher');
+        dispatcher.utter_message(response = "utter_askingForTeacherName", Teacher = val)
 
         return []
