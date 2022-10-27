@@ -40,6 +40,12 @@ from rasa_sdk.executor import CollectingDispatcher
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 Tmaterials_SPREADSHEET_ID = '1rCMJJ2I4wrEYK7kRNI8LNRJrChu-92tc2h0B8YQgNHk'
 classesHours_SPREADSHEET_ID = '1uNnriEN44iDqDMRunvhAcTXs5wqujoUtz4TJnDRxs1Y'
+
+key_file_location = os.path.join(os.path.expanduser('~'), 'rasa2022dgp-2ef451d6a1cf.json')
+api_key = os.environ['GKEY']
+creds = ServiceAccountCredentials.from_json_keyfile_name(key_file_location, SCOPES)
+service = build('sheets', 'v4', credentials=creds, developerKey=api_key)
+
 sheet = service.spreadsheets()
 
 class ActionHelloWorld(Action):
