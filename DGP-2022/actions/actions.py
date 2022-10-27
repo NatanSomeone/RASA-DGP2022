@@ -74,7 +74,7 @@ class ActionGetName(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         name =  tracker.get_slot('name');
-        dispatcher.utter_message(response = "utter_greet_by_name", name = name)
+        dispatcher.utter_message(response = "utter_askingAbtClassesHours", name = name)
 
         return []
 
