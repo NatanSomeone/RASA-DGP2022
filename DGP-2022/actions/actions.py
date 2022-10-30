@@ -29,24 +29,24 @@ import random
 import requests
 import datetime as dt 
 from typing import Any, Text, Dict, List
-# import os
+import os
 
-# from oauth2client.service_account import ServiceAccountCredentials
-# from googleapiclient.discovery import build
+from oauth2client.service_account import ServiceAccountCredentials
+from googleapiclient.discovery import build
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-# SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-# Tmaterials_SPREADSHEET_ID = '1rCMJJ2I4wrEYK7kRNI8LNRJrChu-92tc2h0B8YQgNHk'
-# classesHours_SPREADSHEET_ID = '1uNnriEN44iDqDMRunvhAcTXs5wqujoUtz4TJnDRxs1Y'
+SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+Tmaterials_SPREADSHEET_ID = '1rCMJJ2I4wrEYK7kRNI8LNRJrChu-92tc2h0B8YQgNHk'
+classesHours_SPREADSHEET_ID = '1uNnriEN44iDqDMRunvhAcTXs5wqujoUtz4TJnDRxs1Y'
 
-# key_file_location = os.path.join(os.path.expanduser('~'), 'rasa2022dgp-2ef451d6a1cf.json')
-# api_key = os.environ['GKEY']
-# creds = ServiceAccountCredentials.from_json_keyfile_name(key_file_location, SCOPES)
-# service = build('sheets', 'v4', credentials=creds, developerKey=api_key)
+key_file_location = os.path.join(os.path.expanduser('~'), 'rasa2022dgp-2ef451d6a1cf.json')
+api_key = os.environ['GKEY']
+creds = ServiceAccountCredentials.from_json_keyfile_name(key_file_location, SCOPES)
+service = build('sheets', 'v4', credentials=creds, developerKey=api_key)
 
-# sheet = service.spreadsheets()
+sheet = service.spreadsheets()
 
 class ActionHelloWorld(Action):
 
@@ -79,7 +79,7 @@ class ActionGetName(Action):
 
         return []
 
-class ActionGetName(Action):
+class ActionGetClassesHours(Action):
 
     def name(self) -> Text:
         return "action_get_ClassesHours"
@@ -95,7 +95,7 @@ class ActionGetName(Action):
 
         return []
 
-class ActionGetName(Action):
+class ActionGetTeacherMaterial(Action):
 
     def name(self) -> Text:
         return "action_get_TeacherMaterial"
